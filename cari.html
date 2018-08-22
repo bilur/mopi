@@ -17,6 +17,26 @@
 <![endif]-->
 </head>
 <body>
+<div itemscope itemtype="http://schema.org/WebSite">
+  <meta itemprop="url" content="https://bilur.github.io/mopi/"/>
+  <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+    <meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+    <input itemprop="query-input" type="text" name="search_term_string" required/>
+    <input type="submit"/>
+  </form>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://bilur.github.io/mopi/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://query.example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <style>
